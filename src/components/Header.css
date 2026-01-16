@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.5rem 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    /* Adjust based on logo aspect ratio */
+    width: auto;
+    transition: height 0.3s ease;
+}
+
+.header.scrolled .logo-img {
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav a:not(.btn) {
+    font-weight: 500;
+    color: var(--brand-navy);
+    transition: color 0.2s;
+}
+
+.nav a:not(.btn):hover {
+    color: var(--primary-color);
+}

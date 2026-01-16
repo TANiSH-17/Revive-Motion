@@ -1,0 +1,171 @@
+:root {
+  /* Refined Professional Brand Colors */
+  --primary-color: #EF6C35;
+  /* Soft Burnt Orange - Warm & inviting */
+  --primary-dark: #C2410C;
+  /* Deeper terracotta for hover */
+  --primary-light: #FFF7ED;
+  /* Very soft warm white */
+
+  --secondary-color: #FFFFFF;
+  --accent-color: #F1F5F9;
+  /* Professional Slate-Grey light */
+
+  --brand-navy: #1D3557;
+  /* Deep Prussian Blue - Professional & Calm */
+  --brand-blue: #457B9D;
+  /* Steel Blue for secondary accents */
+
+  --text-dark: #1D3557;
+  /* Using the deep navy for text */
+  --text-light: #64748B;
+  /* Slate 500 - Easy on eyes */
+  --text-white: #ffffff;
+
+  --bg-light: #FFFFFF;
+  /* Smoother, subtle gradient */
+  --bg-gradient: linear-gradient(135deg, #FFF7ED 0%, #FFFFFF 100%);
+
+  /* Softer shadows using navy tint */
+  --shadow-sm: 0 1px 2px 0 rgb(29 53 87 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(29 53 87 / 0.08), 0 2px 4px -2px rgb(29 53 87 / 0.08);
+  --shadow-lg: 0 10px 15px -3px rgb(29 53 87 / 0.08), 0 4px 6px -4px rgb(29 53 87 / 0.08);
+
+  --radius-md: 0.6rem;
+  --radius-lg: 1.2rem;
+  /* Slightly friendlier rounded corners */
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+html {
+  /* scroll-behavior: smooth; handled by lenis */
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 4rem;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-gray {
+  color: var(--text-light);
+}
+
+.bg-light {
+  background-color: var(--accent-color);
+}
+
+.bg-gradient {
+  background: var(--bg-gradient);
+}
+
+/* Animation Utility */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

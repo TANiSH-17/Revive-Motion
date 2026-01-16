@@ -1,0 +1,70 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
+    /* Shift to right: Auto left margin pushes it to the right */
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.doctor-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.doctor-img:hover {
+    transform: scale(1.02);
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.benefits-list li {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.check-icon {
+    display: inline-flex;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    background: none;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+}

@@ -1,0 +1,96 @@
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.review-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    width: 350px;
+    flex-shrink: 0;
+    border: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    color: var(--brand-navy);
+}
+
+.review-clinic {
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    background: var(--primary-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.review-stars {
+    color: #FBBF24;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.google-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    /* Adjust position so it doesn't overlap text */
+    font-weight: bold;
+    opacity: 0.1;
+    font-size: 2rem;
+    display: none;
+    /* Hide for cleanliness */
+}
+
+.mr-4 {
+    margin-right: 1rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
