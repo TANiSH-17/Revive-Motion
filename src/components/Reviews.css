@@ -36,7 +36,9 @@
     padding: 2rem;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
-    width: 350px;
+    width: 85vw;
+    max-width: 350px;
+    min-width: 280px;
     flex-shrink: 0;
     border: 1px solid #e2e8f0;
     position: relative;
