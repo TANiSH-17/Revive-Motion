@@ -51,15 +51,15 @@ const Locations = () => {
                         </div>
                     </div>
 
-                    {/* Clinic 2: Naraina Village */}
+                    {/* Clinic 2: Naraina */}
                     <div className="location-card">
                         <div className="map-container">
-                            <img src={narainaImg} alt="Naraina Village Clinic" className="location-img" />
+                            <img src={narainaImg} alt="Naraina Clinic" className="location-img" />
                         </div>
                         <div className="location-info">
-                            <h3>Revive Motion – Naraina Village</h3>
+                            <h3>Revive Motion – Naraina</h3>
                             <p className="address text-gray mb-2">
-                                <strong>Naraina Village Clinic</strong><br />
+                                <strong>Naraina Clinic</strong><br />
                                 <a href="tel:+918447860086" className="phone-link">📞 +91 84478 60086</a>
                             </p>
 

@@ -91,8 +91,8 @@ const Reviews = () => {
                 </div>
             </div>
 
-            <div className="text-center mt-8">
-                <a href="https://g.page/r/CfpaNRIhNbtwEAE/review" target="_blank" rel="noopener noreferrer" className="btn btn-outline mr-4">View All Reviews (Ramesh Nagar)</a>
+            <div className="reviews-actions mt-8">
+                <a href="https://g.page/r/CfpaNRIhNbtwEAE/review" target="_blank" rel="noopener noreferrer" className="btn btn-outline">View All Reviews (Ramesh Nagar)</a>
                 <a href="https://g.page/r/CWlisPozal3KEAE/review" target="_blank" rel="noopener noreferrer" className="btn btn-outline">View All Reviews (Naraina)</a>
             </div>
         </section>

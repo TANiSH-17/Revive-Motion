@@ -103,3 +103,23 @@
 .mt-8 {
     margin-top: 2rem;
 }
+
+.reviews-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .reviews-actions {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .reviews-actions .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+}

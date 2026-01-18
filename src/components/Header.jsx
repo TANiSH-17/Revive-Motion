@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import logo from '../assets/logo_final.png';
+import logo from '../assets/logo_nav.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import './About.css';
 import doctorImg from '../assets/doctor.png';
 
@@ -10,6 +11,14 @@ const About = () => {
                     {/* Doctor Image */}
                     <div className="image-wrapper">
                         <img src={doctorImg} alt="Dr. Mukul Tanwar" className="doctor-img" />
+                    </div>
+                    <div className="doctor-socials">
+                        <a href="https://www.instagram.com/dr.mukul.tanwar?igsh=MXQxd2ZyNnd4N29rYQ==" target="_blank" rel="noopener noreferrer" className="doc-social-icon instagram">
+                            <FaInstagram />
+                        </a>
+                        <a href="https://www.linkedin.com/in/dr-mukul-tanwar-pt-2535621a2?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" className="doc-social-icon linkedin">
+                            <FaLinkedin />
+                        </a>
                     </div>
                 </div>
                 <div className="about-content">
