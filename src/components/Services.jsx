@@ -53,7 +53,6 @@ const Services = () => {
                                 {service.icon}
                             </div>
                             <h3>{service.title}</h3>
-                            <p className="text-gray">{service.desc}</p>
                         </div>
                     ))}
                 </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Hero.css';
 
+import heroLogo from '../assets/hero_logo.png';
+
 const Hero = () => {
     return (
         <section className="hero">
@@ -13,9 +15,10 @@ const Hero = () => {
             <div className="container hero-container-inner">
                 <div className="hero-content">
 
+                    <img src={heroLogo} alt="Revive Motion Logo" className="hero-logo fade-in-up" />
+
                     <h1 className="hero-title fade-in-up">
-                        Reviving Movement. <br />
-                        <span className="text-gradient">Restoring Life.</span>
+                        Reviving Movement. <span className="text-gradient">Restoring Life.</span>
                     </h1>
                     <p className="hero-subtitle fade-in-up delay-1">
                         Experience world-class physiotherapy designed for pain relief,
@@ -23,10 +26,7 @@ const Hero = () => {
                     </p>
                     <div className="hero-actions fade-in-up delay-2">
                         <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="btn btn-glow">
-                            Book Appointment on WhatsApp
-                        </a>
-                        <a href="#reviews" className="btn btn-glass">
-                            View Google Reviews
+                            Enquire Now
                         </a>
                     </div>
 

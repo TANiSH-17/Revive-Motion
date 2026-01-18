@@ -46,7 +46,7 @@ const Locations = () => {
                                 rel="noopener noreferrer"
                                 className="btn btn-primary btn-full mt-4"
                             >
-                                WhatsApp This Clinic
+                                Get in touch
                             </a>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const Locations = () => {
                                 rel="noopener noreferrer"
                                 className="btn btn-primary btn-full mt-4"
                             >
-                                WhatsApp This Clinic
+                                Get in touch
                             </a>
                         </div>
                     </div>

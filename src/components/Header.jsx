@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo_final.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
@@ -49,15 +49,6 @@ const Header = () => {
                     <a href="#services" onClick={closeMenu}>Services</a>
                     <a href="#locations" onClick={closeMenu}>Locations</a>
                     <a href="#reviews" onClick={closeMenu}>Reviews</a>
-                    <a
-                        href="https://wa.me/918447547440"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-primary btn-sm"
-                        onClick={closeMenu}
-                    >
-                        Book Now
-                    </a>
                 </nav>
             </div>
             {/* Overlay for mobile menu */}

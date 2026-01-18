@@ -22,6 +22,21 @@
     align-items: center;
 }
 
+@media (min-width: 769px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* .logo-container uses default flex behavior */
+
+    .nav {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -62,10 +77,26 @@
     font-weight: 500;
     color: var(--brand-navy);
     transition: color 0.2s;
+    position: relative;
+}
+
+.nav a:not(.btn)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
 }
 
 .nav a:not(.btn):hover {
     color: var(--primary-color);
+}
+
+.nav a:not(.btn):hover::after {
+    width: 100%;
 }
 
 .menu-overlay {

@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Locations from './components/Locations';
 import Reviews from './components/Reviews';
 import CTA from './components/CTA';
+import SocialSection from './components/SocialSection';
 import Footer from './components/Footer';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
@@ -47,11 +48,12 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <About />
       <Locations />
       <Services />
       <Reviews />
       <CTA />
+      <About />
+      <SocialSection />
       <Footer />
     </div>
   );
