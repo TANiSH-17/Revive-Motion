@@ -5,7 +5,7 @@ import heroLogo from '../assets/logo_hero_final.webp';
 import { WHATSAPP_PRIMARY } from '../lib/contact';
 
 const stats = [
-    { number: '500+', label: 'Patients Treated' },
+    { number: '1000+', label: 'Patients Treated' },
     { number: '5+', label: 'Years Experience' },
     { number: '4.9', label: 'Google Rating' },
     { number: '2', label: 'Delhi Clinics' },

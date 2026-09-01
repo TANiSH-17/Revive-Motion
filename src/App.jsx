@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Locations from './components/Locations';
 import Reviews from './components/Reviews';
+import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import SocialSection from './components/SocialSection';
 import Footer from './components/Footer';
@@ -68,6 +69,7 @@ function App() {
         <Locations />
         <Services />
         <Reviews />
+        <FAQ />
         <CTA />
         <About />
         <SocialSection />

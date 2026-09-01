@@ -1,0 +1,89 @@
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xs);
+    overflow: hidden;
+    transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.faq-item:hover {
+    border-color: var(--border-strong);
+}
+
+.faq-item[open] {
+    border-color: var(--primary-200);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: clamp(1rem, 2.2vw, 1.2rem) clamp(1.1rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    font-size: var(--step-base);
+    color: var(--text-dark);
+    line-height: 1.45;
+    cursor: pointer;
+    /* Hide the default disclosure triangle in every engine */
+    list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+/* The card clips its corners, so pull the focus ring inside it */
+.faq-question:focus-visible {
+    outline-offset: -3px;
+}
+
+.faq-chevron {
+    flex-shrink: 0;
+    font-size: 0.8em;
+    color: var(--primary-color);
+    transition: transform 0.3s var(--ease);
+}
+
+.faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 clamp(1.1rem, 2.5vw, 1.5rem) clamp(1.1rem, 2.5vw, 1.3rem);
+}
+
+.faq-answer p {
+    margin: 0;
+    color: var(--text-body);
+    font-size: var(--step-sm);
+    line-height: 1.75;
+}
+
+.faq-footnote {
+    text-align: center;
+    margin: clamp(1.75rem, 3vw, 2.5rem) 0 0;
+    color: var(--text-light);
+    font-size: var(--step-sm);
+}
+
+.faq-footnote a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.faq-footnote a:hover {
+    color: var(--primary-dark);
+}
