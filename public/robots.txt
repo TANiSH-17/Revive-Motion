@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://revivemotion.in/sitemap.xml
+Sitemap: https://www.revivemotion.in/sitemap.xml
