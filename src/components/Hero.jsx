@@ -1,12 +1,20 @@
 import React from 'react';
 import './Hero.css';
+import { FaWhatsapp } from 'react-icons/fa';
+import heroLogo from '../assets/logo_hero_final.webp';
+import { WHATSAPP_PRIMARY } from '../lib/contact';
 
-import heroLogo from '../assets/logo_hero_final.png';
+const stats = [
+    { number: '500+', label: 'Patients Treated' },
+    { number: '5+', label: 'Years Experience' },
+    { number: '4.9', label: 'Google Rating' },
+    { number: '2', label: 'Delhi Clinics' },
+];
 
 const Hero = () => {
     return (
         <section className="hero">
-            <div className="hero-background">
+            <div className="hero-background" aria-hidden="true">
                 <div className="shape shape-1"></div>
                 <div className="shape shape-2"></div>
                 <div className="shape shape-3"></div>
@@ -14,43 +22,54 @@ const Hero = () => {
 
             <div className="container hero-container-inner">
                 <div className="hero-content">
-
-                    <img src={heroLogo} alt="Revive Motion Logo" className="hero-logo fade-in-up" />
+                    <img
+                        src={heroLogo}
+                        alt="Revive Motion Physiotherapy Clinic"
+                        className="hero-logo fade-in-up"
+                        width="1024"
+                        height="165"
+                        fetchPriority="high"
+                    />
 
                     <h1 className="hero-title fade-in-up">
                         Reviving Movement. <span className="text-gradient">Restoring Life.</span>
                     </h1>
+
                     <p className="hero-subtitle fade-in-up delay-1">
-                        Experience world-class physiotherapy designed for pain relief,
-                        mobility restoration, and your long-term wellness.
+                        Evidence-based physiotherapy from
+                        <span className="hero-subtitle-name">
+                            <strong>Dr. Mukul Tanwar</strong> (M.P.T. Orthopaedics)
+                        </span>
+                        <em className="hero-subtitle-note">
+                            for lasting pain relief and restored mobility.
+                        </em>
                     </p>
+
                     <div className="hero-actions fade-in-up delay-2">
-                        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="btn btn-glow">
-                            Enquire Now
+                        <a
+                            href={WHATSAPP_PRIMARY}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                        >
+                            <FaWhatsapp aria-hidden="true" /> Book an Appointment
+                        </a>
+                        <a href="#services" className="btn btn-outline">
+                            Explore Treatments
                         </a>
                     </div>
 
-                    <div className="hero-stats fade-in-up delay-3">
-                        <div className="stat-item">
-                            <span className="stat-number">500+</span>
-                            <span className="stat-label">Happy Patients</span>
-                        </div>
-                        <div className="stat-divider"></div>
-                        <div className="stat-item">
-                            <span className="stat-number">5+</span>
-                            <span className="stat-label">Years Exp.</span>
-                        </div>
-                        <div className="stat-divider"></div>
-                        <div className="stat-item">
-                            <span className="stat-number">4.9</span>
-                            <span className="stat-label">Google Rating</span>
-                        </div>
-                        <div className="stat-divider"></div>
-                        <div className="stat-item">
-                            <span className="stat-number">100+</span>
-                            <span className="stat-label">Surgeries Avoided</span>
-                        </div>
-                    </div>
+                    <dl className="hero-stats fade-in-up delay-3">
+                        {stats.map(({ number, label }, i) => (
+                            <React.Fragment key={label}>
+                                {i > 0 && <div className="stat-divider" aria-hidden="true"></div>}
+                                <div className="stat-item">
+                                    <dt className="stat-number">{number}</dt>
+                                    <dd className="stat-label">{label}</dd>
+                                </div>
+                            </React.Fragment>
+                        ))}
+                    </dl>
                 </div>
             </div>
         </section>

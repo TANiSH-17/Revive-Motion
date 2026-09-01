@@ -1,13 +1,172 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revive Motion</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="en-IN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ⚠️ UPDATE THIS: replace with your real live domain everywhere it appears below -->
+  <link rel="canonical" href="https://revivemotion.in/" />
+
+  <title>Revive Motion — Physiotherapy Clinic in Ramesh Nagar &amp; Naraina, New Delhi</title>
+  <meta name="description"
+    content="Expert physiotherapy in West Delhi by Dr. Mukul Tanwar (M.P.T. Orthopaedics). Treatment for back &amp; neck pain, sports injuries, post-surgery rehab, arthritis and sciatica. Two clinics in Ramesh Nagar &amp; Naraina. Home visits available." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Revive Motion Physiotherapy Clinic" />
+  <meta name="theme-color" content="#EF6C35" />
+
+  <!-- Local search signals -->
+  <meta name="geo.region" content="IN-DL" />
+  <meta name="geo.placename" content="New Delhi" />
+  <meta name="geo.position" content="28.6485363;77.1307871" />
+  <meta name="ICBM" content="28.6485363, 77.1307871" />
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn link previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Revive Motion" />
+  <meta property="og:title" content="Revive Motion — Physiotherapy Clinic in West Delhi" />
+  <meta property="og:description"
+    content="Reviving Movement. Restoring Life. Expert physiotherapy for pain relief, mobility and rehab — Ramesh Nagar &amp; Naraina, New Delhi." />
+  <meta property="og:url" content="https://revivemotion.in/" />
+  <meta property="og:image" content="https://revivemotion.in/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Revive Motion Physiotherapy Clinic — Reviving Movement. Restoring Life." />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Revive Motion — Physiotherapy Clinic in West Delhi" />
+  <meta name="twitter:description"
+    content="Expert physiotherapy for pain relief, mobility and rehab — Ramesh Nagar &amp; Naraina, New Delhi." />
+  <meta name="twitter:image" content="https://revivemotion.in/og-image.jpg" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts: Inter was referenced in CSS but never loaded -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Structured data: two physiotherapy clinics + the practitioner -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://revivemotion.in/#organization",
+        "name": "Revive Motion Physiotherapy Clinic",
+        "url": "https://revivemotion.in/",
+        "logo": "https://revivemotion.in/icon-512.png",
+        "image": "https://revivemotion.in/og-image.jpg",
+        "email": "Revive.Motion.Clinics@gmail.com",
+        "slogan": "Reviving Movement. Restoring Life.",
+        "sameAs": [
+          "https://www.instagram.com/revive_motion/",
+          "https://www.facebook.com/revivemotionofficial/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://revivemotion.in/#website",
+        "url": "https://revivemotion.in/",
+        "name": "Revive Motion",
+        "publisher": { "@id": "https://revivemotion.in/#organization" },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://revivemotion.in/#dr-mukul-tanwar",
+        "name": "Dr. Mukul Tanwar",
+        "jobTitle": "Physiotherapist",
+        "honorificSuffix": "B.P.T., M.P.T. (Orthopaedics), D.N.H.E.",
+        "worksFor": { "@id": "https://revivemotion.in/#organization" },
+        "sameAs": [
+          "https://www.instagram.com/dr.mukul.tanwar",
+          "https://www.linkedin.com/in/dr-mukul-tanwar-pt-2535621a2"
+        ]
+      },
+      {
+        "@type": ["MedicalBusiness", "Physiotherapy"],
+        "@id": "https://revivemotion.in/#ramesh-nagar",
+        "name": "Revive Motion Physiotherapy Clinic — Ramesh Nagar",
+        "parentOrganization": { "@id": "https://revivemotion.in/#organization" },
+        "url": "https://revivemotion.in/#locations",
+        "image": "https://revivemotion.in/og-image.jpg",
+        "telephone": "+91-84475-47440",
+        "priceRange": "₹₹",
+        "currenciesAccepted": "INR",
+        "medicalSpecialty": "PhysicalTherapy",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7/151, Ramesh Nagar (Shanti Specialist Doctor Services)",
+          "addressLocality": "New Delhi",
+          "addressRegion": "Delhi",
+          "postalCode": "110015",
+          "addressCountry": "IN"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 28.6485363, "longitude": 77.1307871 },
+        "hasMap": "https://maps.google.com/?cid=8123144769048500986",
+        "areaServed": { "@type": "City", "name": "New Delhi" },
+        "availableService": [
+          { "@type": "MedicalTherapy", "name": "Orthopedic Physiotherapy" },
+          { "@type": "MedicalTherapy", "name": "Sports Injury Rehabilitation" },
+          { "@type": "MedicalTherapy", "name": "Post-Surgery Rehabilitation" },
+          { "@type": "MedicalTherapy", "name": "Back and Neck Pain Treatment" },
+          { "@type": "MedicalTherapy", "name": "Dry Needling" },
+          { "@type": "MedicalTherapy", "name": "Myofascial Release Therapy" },
+          { "@type": "MedicalTherapy", "name": "Cupping Therapy" },
+          { "@type": "MedicalTherapy", "name": "Manual Therapy" }
+        ]
+      },
+      {
+        "@type": ["MedicalBusiness", "Physiotherapy"],
+        "@id": "https://revivemotion.in/#naraina",
+        "name": "Revive Motion Physiotherapy Clinic — Naraina",
+        "parentOrganization": { "@id": "https://revivemotion.in/#organization" },
+        "url": "https://revivemotion.in/#locations",
+        "image": "https://revivemotion.in/og-image.jpg",
+        "telephone": "+91-84478-60086",
+        "priceRange": "₹₹",
+        "currenciesAccepted": "INR",
+        "medicalSpecialty": "PhysicalTherapy",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "WZ-167, Naraina",
+          "addressLocality": "New Delhi",
+          "addressRegion": "Delhi",
+          "postalCode": "110028",
+          "addressCountry": "IN"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 28.620159, "longitude": 77.138027 },
+        "hasMap": "https://maps.google.com/?cid=14581927939977273961",
+        "areaServed": { "@type": "City", "name": "New Delhi" },
+        "availableService": [
+          { "@type": "MedicalTherapy", "name": "Orthopedic Physiotherapy" },
+          { "@type": "MedicalTherapy", "name": "Sports Injury Rehabilitation" },
+          { "@type": "MedicalTherapy", "name": "Post-Surgery Rehabilitation" },
+          { "@type": "MedicalTherapy", "name": "Back and Neck Pain Treatment" },
+          { "@type": "MedicalTherapy", "name": "Dry Needling" },
+          { "@type": "MedicalTherapy", "name": "Myofascial Release Therapy" },
+          { "@type": "MedicalTherapy", "name": "Cupping Therapy" },
+          { "@type": "MedicalTherapy", "name": "Manual Therapy" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

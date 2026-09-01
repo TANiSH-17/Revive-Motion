@@ -1,17 +1,42 @@
 import React from 'react';
+import './CTA.css';
+import Reveal from './Reveal';
+import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
+import { WHATSAPP_PRIMARY, PHONE_RAMESH_NAGAR } from '../lib/contact';
 
 const CTA = () => {
     return (
-        <section className="section bg-light text-center" style={{ padding: '6rem 1rem' }}>
+        <section className="cta-section">
+            <div className="cta-glow" aria-hidden="true"></div>
+
             <div className="container">
-                <h2 className="mb-4" style={{ fontSize: '2.5rem' }}>Start Your Recovery Journey Today</h2>
-                <p className="text-gray mb-8" style={{ fontSize: '1.2rem', marginBottom: '3rem' }}>
-                    Professional care • Personalized treatment • Proven results
-                </p>
-                <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                    <a href="https://wa.me/1234567890" className="btn btn-primary">Book on WhatsApp</a>
-                    <a href="#reviews" className="btn btn-outline">Visit Google Reviews</a>
-                </div>
+                <Reveal className="cta-inner">
+                    <h2 className="cta-title">Start your recovery today</h2>
+                    <p className="cta-sub">
+                        Message us with what hurts. We'll tell you whether physiotherapy can help —
+                        honestly, and before you book anything.
+                    </p>
+
+                    <div className="cta-actions">
+                        <a
+                            href={WHATSAPP_PRIMARY}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-white btn-lg"
+                        >
+                            <FaWhatsapp aria-hidden="true" /> Book on WhatsApp
+                        </a>
+                        <a href={`tel:+${PHONE_RAMESH_NAGAR}`} className="btn btn-ghost-light btn-lg">
+                            <FaPhoneAlt aria-hidden="true" /> Call the clinic
+                        </a>
+                    </div>
+
+                    <ul className="cta-points">
+                        <li>Professional care</li>
+                        <li>Personalised treatment</li>
+                        <li>Proven results</li>
+                    </ul>
+                </Reveal>
             </div>
         </section>
     );
