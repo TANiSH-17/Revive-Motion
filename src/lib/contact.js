@@ -13,6 +13,17 @@ export const WHATSAPP_PRIMARY = `https://wa.me/${PHONE_RAMESH_NAGAR}?text=${enqu
 export const WHATSAPP_RAMESH_NAGAR = `https://wa.me/${PHONE_RAMESH_NAGAR}?text=${enquiry}`;
 export const WHATSAPP_NARAINA = `https://wa.me/${PHONE_NARAINA}?text=${enquiry}`;
 
+/**
+ * Clinic opening hours. Both locations run the same schedule, including the
+ * afternoon break. The openingHoursSpecification in index.html mirrors this —
+ * update both together.
+ */
+export const OPENING_HOURS = {
+  days: 'Mon – Sat',
+  slots: ['10:00 AM – 2:00 PM', '4:00 PM – 8:00 PM'],
+  closedNote: 'Closed on Sunday',
+};
+
 export const REVIEW_URL_RAMESH_NAGAR = 'https://g.page/r/CfpaNRIhNbtwEAE/review';
 export const REVIEW_URL_NARAINA = 'https://g.page/r/CWlisPozal3KEAE/review';
 

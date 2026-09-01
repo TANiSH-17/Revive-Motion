@@ -1,7 +1,7 @@
 import React from 'react';
 import './Locations.css';
 import Reveal from './Reveal';
-import { FaWhatsapp, FaPhoneAlt, FaDirections, FaRegStar, FaHome } from 'react-icons/fa';
+import { FaWhatsapp, FaPhoneAlt, FaDirections, FaRegStar, FaHome, FaRegClock } from 'react-icons/fa';
 import narainaImg from '../assets/naraina-clinic.webp';
 import rameshNagarImg from '../assets/ramesh-nagar-clinic.webp';
 import {
@@ -13,6 +13,7 @@ import {
     REVIEW_URL_NARAINA,
     MAPS_RAMESH_NAGAR,
     MAPS_NARAINA,
+    OPENING_HOURS,
 } from '../lib/contact';
 
 const clinics = [
@@ -83,6 +84,17 @@ const Locations = () => {
                                     <span className="address-note">{clinic.note}</span><br />
                                     {clinic.city}
                                 </address>
+
+                                <div className="location-hours">
+                                    <FaRegClock className="hours-icon" aria-hidden="true" />
+                                    <div className="hours-body">
+                                        <span className="hours-days">{OPENING_HOURS.days}</span>
+                                        {OPENING_HOURS.slots.map((slot) => (
+                                            <span key={slot} className="hours-slot">{slot}</span>
+                                        ))}
+                                        <span className="hours-closed">{OPENING_HOURS.closedNote}</span>
+                                    </div>
+                                </div>
 
                                 <a href={`tel:+${clinic.phone}`} className="phone-link">
                                     <FaPhoneAlt aria-hidden="true" />

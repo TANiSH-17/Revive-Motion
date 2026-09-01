@@ -154,3 +154,33 @@
         gap: 2.25rem;
     }
 }
+
+.footer-hours {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin: 0 0 0.4rem;
+    padding: 0.3rem 0;
+    color: #b9c6d8;
+    font-size: var(--step-sm);
+    line-height: 1.6;
+}
+
+.footer-hours .contact-icon {
+    margin-top: 0.2rem;
+    color: var(--primary-color);
+}
+
+.footer-hours-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-hours-days {
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.footer-hours-slot {
+    white-space: nowrap;
+}

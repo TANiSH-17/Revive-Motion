@@ -1,17 +1,31 @@
 import React from 'react';
 import './Footer.css';
 import { FaInstagram, FaWhatsapp, FaFacebook } from 'react-icons/fa';
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiClock } from 'react-icons/fi';
 import {
     PHONE_RAMESH_NAGAR,
     PHONE_NARAINA,
     WHATSAPP_PRIMARY,
     MAPS_RAMESH_NAGAR,
     MAPS_NARAINA,
+    OPENING_HOURS,
 } from '../lib/contact';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+
+    // Identical at both clinics, so it is built once and rendered in each column.
+    const hours = (
+        <p className="footer-hours">
+            <FiClock className="contact-icon" aria-hidden="true" />
+            <span className="footer-hours-body">
+                <span className="footer-hours-days">{OPENING_HOURS.days}</span>
+                {OPENING_HOURS.slots.map((slot) => (
+                    <span key={slot} className="footer-hours-slot">{slot}</span>
+                ))}
+            </span>
+        </p>
+    );
 
     return (
         <footer id="contact-us" className="footer">
@@ -58,6 +72,7 @@ const Footer = () => {
                         Shanti Specialist Doctor Services<br />
                         New Delhi – 110015
                     </address>
+                    {hours}
                     <a href={`tel:+${PHONE_RAMESH_NAGAR}`} className="contact-item">
                         <FiPhone className="contact-icon" aria-hidden="true" />
                         <span>+91 84475 47440</span>
@@ -75,6 +90,7 @@ const Footer = () => {
                         Ground floor<br />
                         New Delhi – 110028
                     </address>
+                    {hours}
                     <a href={`tel:+${PHONE_NARAINA}`} className="contact-item">
                         <FiPhone className="contact-icon" aria-hidden="true" />
                         <span>+91 84478 60086</span>

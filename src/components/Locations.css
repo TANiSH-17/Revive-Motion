@@ -130,3 +130,48 @@
         flex-direction: column;
     }
 }
+
+/* ---------- Opening hours ----------
+   This is the "can I come in today?" answer, so it gets its own panel
+   rather than being buried in the address block. */
+.location-hours {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding: 0.75rem 0.9rem;
+    margin-bottom: 1.25rem;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.hours-icon {
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.hours-body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.hours-days {
+    font-weight: 700;
+    font-size: var(--step-sm);
+    color: var(--text-dark);
+}
+
+/* Each shift is its own line and never breaks mid-range. */
+.hours-slot {
+    font-size: var(--step-sm);
+    color: var(--text-body);
+    white-space: nowrap;
+}
+
+.hours-closed {
+    font-size: var(--step-xs);
+    color: var(--text-light);
+    margin-top: 0.15rem;
+}
